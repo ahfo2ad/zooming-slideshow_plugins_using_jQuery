@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/image-zoom.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>zooming and sliding plugins</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="zooming">
+            <h3>zooming</h3>
+            <img src="images/7.jpg">
+        </div>
+        <div class="slideshow">
+            <h3>slider</h3>
+            <div class="slides-box">
+                
+                <div class="slide">
+                    <img src="images/311_jquery_logo.jpg" alt="image" title="image">
+                </div>
+                <div class="slide">
+                    <img src="images/6.jpg" alt="image" title="image">
+                </div>
+                <div class="slide">
+                    <img src="images/7.jpg" alt="image" title="image">
+                </div>
+                <div class="slide">
+                    <img src="images/12.gif" alt="image" title="image">
+                </div>
+                <div class="slide">
+                    <img src="images/5.jpg" alt="image" title="image">
+                </div>
+            </div>
+            <div class="slideshow-buttons">
+                <span class="prev-btn"><button>previous</button></span>
+                <span class="next-btn"><button>next</button></span>
+            </div>
+        
+        </div>
+    </div>
+    <p style="text-transform: lowercase ;">
+        CREATE TRIGGER after_update_contact_info
+        AFTER UPDATE ON students
+        FOR EACH ROW
+        BEGIN
+        IF (NEW.email != OLD.email OR NEW.address != OLD.address) THEN
+        INSERT INTO contact_info_logs(`description`)
+        VALUES ('UPDATE');
+        END IF;
+        END$$
+        DELIMITER ;
+</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/image-zoom.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

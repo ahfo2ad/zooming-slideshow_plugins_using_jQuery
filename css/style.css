@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.container .zooming,
+.container .slideshow {
+    width: 400px;
+    margin: 50px auto;
+
+}
+
+.container .zooming h3,
+.container .slideshow h3 {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container .zooming img {
+    cursor: pointer;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.slides-box img {
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+}
+.container .slideshow-buttons button {
+    text-transform: capitalize;
+    margin-top: 30px;
+    padding: 7px 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.container .slideshow-buttons .next-btn {
+    float: right;
+}
