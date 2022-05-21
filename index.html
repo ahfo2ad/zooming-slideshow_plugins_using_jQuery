@@ -42,18 +42,6 @@
         
         </div>
     </div>
-    <p style="text-transform: lowercase ;">
-        CREATE TRIGGER after_update_contact_info
-        AFTER UPDATE ON students
-        FOR EACH ROW
-        BEGIN
-        IF (NEW.email != OLD.email OR NEW.address != OLD.address) THEN
-        INSERT INTO contact_info_logs(`description`)
-        VALUES ('UPDATE');
-        END IF;
-        END$$
-        DELIMITER ;
-</p>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/image-zoom.min.js"></script>
